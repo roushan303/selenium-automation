@@ -22,16 +22,12 @@ import java.time.Duration;
 public class BaseTest extends Utilities {
 
     public static WebDriver driver;
-    public static String remoteUrlChrome = "http://localhost:4444/wd/hub";
 
 
     @BeforeTest
-    public void setUpDriver() throws MalformedURLException {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox");
-        driver = new RemoteWebDriver(new URL(remoteUrlChrome),options);
-        //WebDriverManager.chromedriver().setup();
-        //driver = new ChromeDriver();
+    public void setUpDriver(){
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
     }
