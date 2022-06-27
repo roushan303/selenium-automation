@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Google UI Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 28, 2022 03:22:53</span></a>
+<a href="#"><span class="badge badge-primary">Jun 28, 2022 03:29:42</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -81,7 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -101,25 +96,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">GoogleTest</p>
             <p class="text-sm">
-              <span>3:24:00 am</span> / <span>00:00:05:467</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>3:29:46 am</span> / <span>00:00:07:715</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">GoogleTest</h5>
-<span class='badge badge-success'>06.28.2022 3:24:00 am</span>
-<span class='badge badge-danger'>06.28.2022 3:24:06 am</span>
-<span class='badge badge-default'>00:00:05:467</span>
+<h5 class="test-status text-pass">GoogleTest</h5>
+<span class='badge badge-success'>06.28.2022 3:29:46 am</span>
+<span class='badge badge-danger'>06.28.2022 3:29:54 am</span>
+<span class='badge badge-default'>00:00:07:715</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -131,9 +126,9 @@
         <div class="card-header">
           <div class="card-toolbar node-info">
             <ul class="list-inline d-none d-sm-block">
-              <li><span class="badge fail-bg log ">Fail</span></li>
-              <li><span class='badge badge-default'>30:05:459</span></li>
-              <li></li>
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:02:298</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
             </ul>
           </div>
           <div class="card-title">
@@ -143,98 +138,214 @@
 <span class="badge badge-pill badge-default">Gmail</span>            </div>
           </div>
         </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:24:05 am</td>
+        <td>3:29:48 am</td>
         <td>
           <span class='badge white-text cyan'>Opening google main search page.</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:24:05 am</td>
+        <td>3:29:48 am</td>
         <td>
           <span class='badge white-text amber'>passed</span>
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:24:05 am</td>
+        <td>3:29:49 am</td>
         <td>
           Test passed
         </td>
       </tr>
+  </tbody>
+</table>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/openGoogleMainPage-img.png' src="screenshot/openGoogleMainPage-img.png">
+    
+    </div></div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:02:342</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="3"><span>clickGmailIcon</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">RoushanGiri</span>
+<span class="badge badge-pill badge-default">Gmail</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:24:06 am</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:29:51 am</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.WebDriverException: unknown error: cannot activate web view
-  (Session info: chrome=103.0.5060.53)
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'Roushans-MacBook-Air.local', ip: 'fe80:0:0:0:1c7b:45db:cf87:2c2c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c5a4a1053010c49cc7be0ba14014d8a6, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.53, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/pf/932w3kj51sl...}, goog:chromeOptions: {debuggerAddress: localhost:65067}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65067/devtoo..., se:cdpVersion: 103.0.5060.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c5a4a1053010c49cc7be0ba14014d8a6
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:333)
-	at com.routech.automation.test.utils.Utilities.takeScreenShot(Utilities.java:21)
-	at com.routech.automation.test.utils.Listener.onTestSuccess(Listener.java:12)
-	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:103)
-	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:276)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:744)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
-</textarea>
-          
+          <span class='badge white-text cyan'>Re-directing to google gmail login page.</span>
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:24:06 am</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:29:51 am</td>
         <td>
-          openGoogleMainPage got failed, kindly check the error log
+          Test passed
         </td>
       </tr>
   </tbody>
 </table>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/clickGmailIcon-img.png' src="screenshot/clickGmailIcon-img.png">
+    
+    </div></div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:01:987</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="4"><span>clickOnSignInBtn</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">RoushanGiri</span>
+<span class="badge badge-pill badge-default">Gmail</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:29:53 am</td>
+        <td>
+          <span class='badge white-text cyan'>On google gmail page clicking on signIn button.</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:29:53 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/clickOnSignInBtn-img.png' src="screenshot/clickOnSignInBtn-img.png">
+    
+    </div></div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:687</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="5"><span>enterUsername</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">RoushanGiri</span>
+<span class="badge badge-pill badge-default">Gmail</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:29:53 am</td>
+        <td>
+          <span class='badge white-text cyan'>Entering the username in google mail sign in page</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:29:54 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/enterUsername-img.png' src="screenshot/enterUsername-img.png">
+    
+    </div></div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:380</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="6"><span>clickNextAfterEnteringUsername</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">RoushanGiri</span>
+<span class="badge badge-pill badge-default">Gmail</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>3:29:54 am</td>
+        <td>
+          <span class='badge white-text cyan'>After entering the username in google mail sign in page clicking the next button.</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>3:29:54 am</td>
+        <td>
+          Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/clickNextAfterEnteringUsername-img.png' src="screenshot/clickNextAfterEnteringUsername-img.png">
+    
+    </div></div>
           </div>
         </div>
       </div>
@@ -251,59 +362,7 @@ Session ID: c5a4a1053010c49cc7be0ba14014d8a6
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.WebDriverException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.WebDriverException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>03:24:00 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>openGoogleMainPage</a>
-<div class="">
-<span class="badge badge-default">GoogleTest.openGoogleMainPage</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
@@ -314,15 +373,15 @@ Session ID: c5a4a1053010c49cc7be0ba14014d8a6
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>5</span>
 </span>
 <p class="name">Gmail</p>
-<p class="duration text-sm">1 tests</p>
+<p class="duration text-sm">5 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>Gmail</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -333,13 +392,53 @@ Session ID: c5a4a1053010c49cc7be0ba14014d8a6
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>03:24:00 am</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:29:46 am</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>openGoogleMainPage</a>
 <div class="">
 <span class="badge badge-default">GoogleTest.openGoogleMainPage</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:29:49 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>clickGmailIcon</a>
+<div class="">
+<span class="badge badge-default">GoogleTest.clickGmailIcon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:29:51 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>clickOnSignInBtn</a>
+<div class="">
+<span class="badge badge-default">GoogleTest.clickOnSignInBtn</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:29:53 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>enterUsername</a>
+<div class="">
+<span class="badge badge-default">GoogleTest.enterUsername</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:29:54 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>clickNextAfterEnteringUsername</a>
+<div class="">
+<span class="badge badge-default">GoogleTest.clickNextAfterEnteringUsername</span>
 </div>
 </td>
 </tr>
@@ -366,15 +465,15 @@ Session ID: c5a4a1053010c49cc7be0ba14014d8a6
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>5</span>
 </span>
 <p class="name">RoushanGiri</p>
-<p class="duration text-sm">1 tests</p>
+<p class="duration text-sm">5 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>RoushanGiri</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -385,13 +484,53 @@ Session ID: c5a4a1053010c49cc7be0ba14014d8a6
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>03:24:00 am</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:29:46 am</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>openGoogleMainPage</a>
 <div class="">
 <span class="badge badge-default">GoogleTest.openGoogleMainPage</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:29:49 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>clickGmailIcon</a>
+<div class="">
+<span class="badge badge-default">GoogleTest.clickGmailIcon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:29:51 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>clickOnSignInBtn</a>
+<div class="">
+<span class="badge badge-default">GoogleTest.clickOnSignInBtn</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:29:53 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>enterUsername</a>
+<div class="">
+<span class="badge badge-default">GoogleTest.enterUsername</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:29:54 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>clickNextAfterEnteringUsername</a>
+<div class="">
+<span class="badge badge-default">GoogleTest.clickNextAfterEnteringUsername</span>
 </div>
 </td>
 </tr>
@@ -412,25 +551,25 @@ Session ID: c5a4a1053010c49cc7be0ba14014d8a6
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 28, 2022 03:22:53</h3>
+<h3>Jun 28, 2022 03:29:42</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 28, 2022 03:24:09</h3>
+<h3>Jun 28, 2022 03:29:57</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Class Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Class Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -446,12 +585,12 @@ Session ID: c5a4a1053010c49cc7be0ba14014d8a6
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> class passed
+<div><small data-tooltip='100%'>
+<b>1</b> class passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> class failed,
+<small data-tooltip='0%'><b>0</b> class failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -469,9 +608,9 @@ Session ID: c5a4a1053010c49cc7be0ba14014d8a6
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> methods passed</small></div>
+<div><small data-tooltip='100%'><b>5</b> methods passed</small></div>
 <div>
-<small data-tooltip='100%'><b>1</b> methods failed,
+<small data-tooltip='0%'><b>0</b> methods failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -489,10 +628,10 @@ Session ID: c5a4a1053010c49cc7be0ba14014d8a6
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='40%'><b>2</b> events passed</small></div>
+<div><small data-tooltip='54%'><b>6</b> events passed</small></div>
 <div>
-<small data-tooltip='40%'><b>2</b> events failed,
-<b data-tooltip='%'>1</b> others
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>5</b> others
 </small>
 </div>
 </div>
@@ -508,7 +647,7 @@ Session ID: c5a4a1053010c49cc7be0ba14014d8a6
 </div></div>
 <script>
 var timeline = {
-"GoogleTest":5.467
+"GoogleTest":7.715
 };
 </script>
 <div class="row">
@@ -520,11 +659,11 @@ var timeline = {
 <tbody>
 <tr>
 <td>RoushanGiri</td>
+<td>5</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -537,11 +676,11 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>Gmail</td>
+<td>5</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -552,13 +691,13 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 1,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 0,
-failChild: 1,
+passChild: 5,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
@@ -569,11 +708,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 2,
-failEvents: 2,
+passEvents: 6,
+failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 1
+infoEvents: 5
 };
 </script>        </div>
       </div>
