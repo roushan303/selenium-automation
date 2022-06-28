@@ -1,4 +1,4 @@
-package com.routech.automation.googleMainPages;
+package com.routech.automation.google.googleMainPages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;

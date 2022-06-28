@@ -1,4 +1,4 @@
-package com.routech.automation.googleGmailPages;
+package com.routech.automation.google.googleGmailPages;
 
 import com.routech.automation.common.AbstractComponent;
 import org.openqa.selenium.WebDriver;

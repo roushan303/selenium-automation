@@ -1,4 +1,4 @@
-package com.routech.automation.googleGmailPages;
+package com.routech.automation.google.googleGmailPages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -12,7 +12,7 @@ public class GoogleGmailMainpage {
 
     public GoogleGmailMainpage(final WebDriver driver){
         this.googleGmailPageWidget = PageFactory.initElements(driver, GoogleGmailPageWidget.class);
-        this.googleGmailSignInPage = PageFactory.initElements(driver,GoogleGmailSignInPage.class);
+        this.googleGmailSignInPage = PageFactory.initElements(driver, GoogleGmailSignInPage.class);
         this.googleSignInPasswordPage = PageFactory.initElements(driver, GoogleSignInPasswordPage.class);
     }
 

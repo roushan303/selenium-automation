@@ -1,13 +1,9 @@
 package com.routech.automation.test.googlePages;
 
-import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.aventstack.extentreports.service.ExtentTestManager;
-import com.routech.automation.googleGmailPages.GoogleGmailMainpage;
-import com.routech.automation.googleMainPages.GoogleMainPage;
+import com.routech.automation.google.googleGmailPages.GoogleGmailMainpage;
+import com.routech.automation.google.googleMainPages.GoogleMainPage;
 import com.routech.automation.test.BaseTest;
 import com.routech.automation.test.utils.Listener;
-import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
