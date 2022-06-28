@@ -37,11 +37,12 @@ public class GoogleTest extends BaseTest {
         writeLogs("info","Re-directing to google gmail login page.");
     }
 
-    @Test(priority = 3, groups = {"Gmail", "a:Roushan Giri"})
-    public void clickOnSignInBtn(){
-        googleGmailMainpage.getGoogleGmailPageWidget().clickGmailSignInBtn();
-        writeLogs("info","On google gmail page clicking on signIn button.");
-    }
+//    @Test(priority = 3, groups = {"Gmail", "a:Roushan Giri"})
+//    public void clickOnSignInBtn(){
+//        //googleGmailMainpage.getGoogleGmailPageWidget().isDisplayed();
+//        googleGmailMainpage.getGoogleGmailPageWidget().clickGmailSignInBtn();
+//        writeLogs("info","On google gmail page clicking on signIn button.");
+//    }
 
     @Test(priority = 4, groups = {"Gmail", "a:Roushan Giri"})
     public void enterUsername() throws IOException {

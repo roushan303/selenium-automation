@@ -7,8 +7,9 @@ import org.openqa.selenium.support.FindBy;
 
 public class GoogleGmailPageWidget extends AbstractComponent {
 
-    @FindBy(linkText = "Sign in")
+    @FindBy(xpath = "//a[@data-action='sign in']")
     private WebElement gmailSignInBtn;
+
 
 
     public GoogleGmailPageWidget(final WebDriver driver) {
