@@ -27,7 +27,9 @@ public class BaseTest extends Utilities {
     @BeforeTest
     public void setUpDriver(){
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        ChromeOptions option=new ChromeOptions();
+        option.setHeadless(true);
+        driver = new ChromeDriver(option);
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
     }
