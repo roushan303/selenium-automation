@@ -10,8 +10,6 @@ public class GoogleGmailPageWidget extends AbstractComponent {
     @FindBy(xpath = "//a[@data-action='sign in']")
     private WebElement gmailSignInBtn;
 
-
-
     public GoogleGmailPageWidget(final WebDriver driver) {
         super(driver);
     }

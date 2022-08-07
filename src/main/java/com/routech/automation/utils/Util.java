@@ -1,4 +1,4 @@
-package com.routech.automation.test.utils;
+package com.routech.automation.utils;
 
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
@@ -13,12 +13,18 @@ import org.testng.ITestResult;
 import java.io.File;
 import java.io.IOException;
 
-public class Utilities {
+public class Util {
 
-    public void takeScreenShot(WebDriver driver, ITestResult result) {
+    private WebDriver driver;
+
+    public Util(final WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public void takeScreenShot(ITestResult result) {
         String methodName = result.getName();
         String destPath = "test-output/SparkReport/screenshot/" + methodName +"-img.png";
-        File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File srcFile = ((TakesScreenshot) this.driver).getScreenshotAs(OutputType.FILE);
         try {
             FileUtils.copyFile(srcFile, new File(destPath));
         } catch (IOException e) {
@@ -42,5 +48,6 @@ public class Utilities {
                 break;
 
         }
+
     }
 }
