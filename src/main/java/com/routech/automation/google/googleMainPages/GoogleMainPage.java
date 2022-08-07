@@ -8,6 +8,7 @@ public class GoogleMainPage {
     private WebDriver driver;
     private GoogleSearchWidget googleSearchWidget;
 
+
     public GoogleMainPage(final WebDriver driver){
         this.driver = driver;
         this.googleSearchWidget = PageFactory.initElements(driver, GoogleSearchWidget.class);
