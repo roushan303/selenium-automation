@@ -4,6 +4,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.service.ExtentTestManager;
+import com.routech.automation.common.DriverType;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -16,21 +17,23 @@ import java.io.IOException;
 public class Util {
 
     private WebDriver driver;
+    private DriverType browser;
 
-    public Util(final WebDriver driver) {
+    public Util(final WebDriver driver, DriverType browser) {
+        this.browser = browser;
         this.driver = driver;
     }
 
     public void takeScreenShot(ITestResult result) {
         String methodName = result.getName();
-        String destPath = "test-output/SparkReport/screenshot/" + methodName +"-img.png";
+        String destPath = "test-output/SparkReport/screenshot/" + methodName + browser + "-img.png";
         File srcFile = ((TakesScreenshot) this.driver).getScreenshotAs(OutputType.FILE);
         try {
             FileUtils.copyFile(srcFile, new File(destPath));
         } catch (IOException e) {
             e.printStackTrace();
         }
-        ExtentTestManager.getTest(result).addScreenCaptureFromPath("screenshot/" + methodName + "-img.png");
+        ExtentTestManager.getTest(result).addScreenCaptureFromPath("screenshot/" + methodName + browser + "-img.png");
     }
 
     public void writeLogs(String logType, String message) {

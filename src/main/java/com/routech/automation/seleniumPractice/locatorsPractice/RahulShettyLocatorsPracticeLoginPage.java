@@ -16,6 +16,9 @@ public class RahulShettyLocatorsPracticeLoginPage extends AbstractComponent {
     @FindBy(xpath = "//button[@type='submit']")
     private WebElement signInButton;
 
+    @FindBy(css = "p.error")
+    private WebElement errorMsg;
+
     public RahulShettyLocatorsPracticeLoginPage(WebDriver driver) {
         super(driver);
     }
@@ -32,8 +35,13 @@ public class RahulShettyLocatorsPracticeLoginPage extends AbstractComponent {
         signInButton.click();
     }
 
+    public String getErrorMessage(){
+        String message = errorMsg.getText();
+        return message;
+    }
+
     @Override
     public boolean isDisplayed() {
-        return false;
+        return this.wait.until(driver -> this.errorMsg.isDisplayed());
     }
 }

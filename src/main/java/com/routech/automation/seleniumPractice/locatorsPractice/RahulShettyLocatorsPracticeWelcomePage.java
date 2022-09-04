@@ -7,7 +7,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class RahulShettyLocatorsPracticeWelcomePage extends AbstractComponent {
 
-    @FindBy(xpath = "//p[contains(text(),'You are successfully logged in.')]")
+   @FindBy(tagName = "h2")
+    private WebElement usernameMsg;
+
+    @FindBy(tagName = "p")
     private WebElement loginMsg;
 
 
@@ -18,6 +21,7 @@ public class RahulShettyLocatorsPracticeWelcomePage extends AbstractComponent {
     public String verifyingSuccessMessage(){
         return(loginMsg.getText());
     }
+    public String verifyUsernameMessage(){return (usernameMsg.getText());}
 
     @Override
     public boolean isDisplayed() {

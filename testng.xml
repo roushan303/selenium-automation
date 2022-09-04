@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="/Users/reyansh/Projects/Selenium_google_email">
-                <classes>
-                    <class name="com.routech.automation.test.googlePages.GoogleTest"></class>
-                </classes>
-    </test>
+<suite name="Selenium_google_email">
+    <suite-files>
+        <suite-file path="testngChrome.xml"/>
+        <suite-file path="testNgFirefox.xml"/>
+    </suite-files>
+
+
 </suite>

@@ -23,6 +23,7 @@ public class ConfigLoader {
         properties.setProperty("gmailUsername",gmailUsername);
         gmailPassword = System.getProperty("gmailPassword");
         properties.setProperty("gmailPassword",gmailPassword);
+
     }
 
     public static ConfigLoader getInstance() {
@@ -66,6 +67,7 @@ public class ConfigLoader {
             throw new RuntimeException("Properties not found in properties file");
         }
     }
+
 
     public String getGmailPassword(){
         String prop = properties.getProperty("gmailPassword");

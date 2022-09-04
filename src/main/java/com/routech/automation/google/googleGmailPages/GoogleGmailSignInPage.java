@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 public class GoogleGmailSignInPage extends AbstractComponent {
 
     @FindBy(id = "identifierId")
-    private WebElement signInTextBox;
+    private WebElement emailTextBox;
 
     @FindBy(id = "identifierNext")
     private WebElement nextBtn;
@@ -18,15 +18,15 @@ public class GoogleGmailSignInPage extends AbstractComponent {
     }
 
     public void enterUsername(String username){
-        this.signInTextBox.sendKeys(username);
+        this.emailTextBox.sendKeys(username);
     }
 
-    public void clickBtn(){
+    public void clickNextBtn(){
         this.nextBtn.click();
     }
 
     @Override
     public boolean isDisplayed() {
-        return this.wait.until(driver -> this.signInTextBox.isDisplayed());
+        return this.wait.until(driver -> this.emailTextBox.isDisplayed());
     }
 }

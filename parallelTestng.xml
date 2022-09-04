@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test suite" parallel="none" thread-count="2">
+
+    <test name="selenium_google_email_Chrome">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="com.routech.automation.test.amazon.AmazonTest"/>
+            <class name="com.routech.automation.test.googlePages.GoogleTest"/>
+            <class name="com.routech.automation.test.seleniumPractice.automationPractice.AutomationPracticePageTest"/>
+        </classes>
+
+    </test>
+</suite>

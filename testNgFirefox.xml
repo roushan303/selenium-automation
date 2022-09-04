@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Suite in Firefox">
+
+    <test name="AmazonTest">
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="com.routech.automation.test.amazon.AmazonTest"/>
+        </classes>
+
+    </test>
+    <test name="GoogleTest">
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+
+            <class name="com.routech.automation.test.googlePages.GoogleTest"/>
+        </classes>
+
+    </test>
+    <test name="RahulShettyLocatorsPracticeLoginPageEnterIncorrectCredentialTest">
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="com.routech.automation.test.seleniumPractice.locatorsPractice.RahulShettyLocatorsPracticeLoginPageEnterIncorrectCredentialTest"/>
+        </classes>
+
+    </test>
+    <test name="RahulShettyLocatorsPracticeLoginPageTest">
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="com.routech.automation.test.seleniumPractice.locatorsPractice.RahulShettyLocatorsPracticeLoginPageTest"/>
+        </classes>
+
+    </test>
+    <test name="RahulShettyHomePageTest">
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="com.routech.automation.test.seleniumPractice.mainWebsite.RahulShettyHomePageTest"/>
+        </classes>
+
+    </test>
+    <test name="RahulShettyLoginPageTest">
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="com.routech.automation.test.seleniumPractice.mainWebsite.RahulShettyLoginPageTest"/>
+        </classes>
+
+    </test>
+    <test name="AutomationPracticePageTest">
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="com.routech.automation.test.seleniumPractice.automationPractice.AutomationPracticePageTest"/>
+        </classes>
+
+    </test>
+
+</suite>
